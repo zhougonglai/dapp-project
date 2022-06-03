@@ -1,8 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect } from 'react'
+import contract from '@zgl/dapp-contract';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+
+
+  useEffect(() => {
+    console.log('contract', contract)
+  });
+
+
   return (
     <div className={styles.container}>
       <Head>
